@@ -98,4 +98,4 @@ Any access attempt by either mode to an index outside this range (i.e., `asciima
 *Memory access in M-mode:*
 [#norm:mmode_mem_access_bypasses_spmp]#If the effective privilege mode of the memory access is M, the access is `allowed` regardless of the SPMP permissions.#
 
-If the Shbare extension is implemented in conjunction with `Sspmp`, then when V=1 and hgatp.MODE=Bare, the Hypervisor Virtual Machine Load and Store instructions (HLV, HLVX, HSV) executed from M-mode are subject to SPMP checks.
+If the Shbare extension is implemented in conjunction with `Sspmp`, then when `V=1` and `hgatp.MODE=Bare`, the Hypervisor Virtual Machine Load and Store instructions (HLV, HLVX, HSV) executed from M-mode are subject to SPMP checks.
