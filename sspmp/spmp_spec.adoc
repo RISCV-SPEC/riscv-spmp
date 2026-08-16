@@ -12,8 +12,8 @@ Consequently, if a memory access violates both SPMP and PMP/PMA rules, only the 
 SPMP checks are enforced on all memory accesses with effective privilege modes less privileged than M-mode.
 SPMP can be configured to grant permissions to U-mode, which has none by default, and to revoke permissions from S-mode.
 
-If the Shbare extension is implemented in conjunction with `Sspmp`, when V=1 and hgatp.MODE=Bare, SPMP enforces access checks on all memory accesses from VS and VU-modes, effectively applying SPMP protections to guest execution contexts.
-Additionally, the Hypervisor Virtual Machine Load and Store instructions (HLV, HLVX, HSV), when executed from the HS-mode, or U-mode (when hstatus.HU=1), are also subject to SPMP checks when V=1 and hgatp.MODE=Bare.
+If the Shbare extension is implemented in conjunction with `Sspmp`, when `V=1` and `hgatp.MODE=Bare`, SPMP enforces access checks on all memory accesses from VS and VU-modes, effectively applying SPMP protections to guest execution contexts.
+Additionally, the Hypervisor Virtual Machine Load and Store instructions (HLV, HLVX, HSV), when executed from the HS-mode, or U-mode (when hstatus.HU=1), are also subject to SPMP checks when `V=1` and `hgatp.MODE=Bare`.
 
 
 === Extension Dependencies
@@ -162,7 +162,7 @@ SPMP supports three distinct rule types: *S-mode-only*, *U-mode* and *Shared-Reg
 +
 . The encodings [#norm:rwx_010_reserved]#`spmpcfg.RWX=010`#, [#norm:rwx_011_reserved]#`spmpcfg.RWX=011`#, as well as the combination `spmpcfg.SHARED == 1 and spmpcfg.U == 0` are all reserved for future standard use.
 
-If the Shbare extension is implemented, when V=1 and hgatp.MODE=Bare, the permission encodings remain consistent with those when spmpcfg.U=1, but are applied to VS/VU rather than U-mode accesses.
+If the Shbare extension is implemented, when `V=1` and `hgatp.MODE=Bare`, the permission encodings remain consistent with those when spmpcfg.U=1, but are applied to VS/VU rather than U-mode accesses.
 
 The complete table of encodings and their outcomes is presented in <<spmpencode>>:
 
@@ -223,10 +223,10 @@ The following table dictates which isolation mechanism is active based on the sa
 
 [cols="^1,^1", stripes=even, options="header"]
 |===
-|satp|Isolation mechanism
-|satp.mode == Bare with Sspmp |SPMP only
-|satp.mode == Bare without Sspmp|no S-mode protection checks
-|satp.mode != Bare |Paged Virtual Memory only
+|Configuration|Isolation mechanism
+|`satp.MODE=Bare` and `Sspmp` implemented |SPMP only
+|`satp.MODE=Bare` and `Sspmp` not implemented |No S-mode protection checks
+|`satp.MODE!=Bare` |Paged Virtual Memory only
 |===
 
 
@@ -309,5 +309,5 @@ Table of exception codes:
 
 [NOTE]
 ====
-Since, when V=1, SPMP is only active when hgatp.MODE=Bare, SPMP protection and G-stage translation are mutually exclusive. Consequently, when SPMP is active, paged virtual memory translations are disabled, and guest page fault exception codes can be repurposed to indicate guest SPMP access violations.
+Since, when `V=1`, SPMP is only active when `hgatp.MODE=Bare`, SPMP protection and G-stage translation are mutually exclusive. Consequently, when SPMP is active, paged virtual memory translations are disabled, and guest page fault exception codes can be repurposed to indicate guest SPMP access violations.
 ====
