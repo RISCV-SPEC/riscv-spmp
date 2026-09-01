@@ -1,17 +1,22 @@
 == Contributors
 
-The proposed specifications (non-ratified, under discussion) has been contributed to directly or indirectly by:
+The following individuals have contributed, directly or indirectly, to the proposed SPMP for Hypervisor specifications:
+
+(Contributors are sorted alphabetically by last name.)
 
 [%hardbreaks]
-* Bicheng Yang, Editor <bichengyang@sjtu.edu.cn>
 * José Martins, Editor <jose@osyx.tech>
-* Dong Du
-* Sandro Pinto
-* Thomas Roecker
-* Manuel Rodriguez
+* Bicheng Yang, Editor <bichengyang@sjtu.edu.cn>
+* Haibo Chen
 * Luís Cunha
-* Kajetan Nürnberger
-* Harry Wagstaff
 * Ruud Derwig
+* Dong Du
 * Lupe Carlos IV
 * Radim Krčmář
+* Kajetan Nürnberger
+* Sandro Pinto
+* Manuel Rodriguez
+* Thomas Roecker
+* Peter Vrabel
+* Harry Wagstaff
+* Yubin Xia
