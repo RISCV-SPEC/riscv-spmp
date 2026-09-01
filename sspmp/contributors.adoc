@@ -1,35 +1,42 @@
 == Contributors
 
-The proposed SPMP specifications has been contributed to directly or indirectly by:
+The following individuals have contributed, directly or indirectly, to the proposed SPMP specifications:
+
+(Contributors are sorted alphabetically by last name.)
 
 [%hardbreaks]
 * Dong Du, Editor <dd_nirvana@sjtu.edu.cn>
 * Bicheng Yang, Editor <bichengyang@sjtu.edu.cn>
+* Jack Andrew
+* Krste Asanović
+* Allen Baum
+* Jonathan Behrens
+* Haibo Chen
+* Luís Cunha
+* Andy Dellow
+* Greg Favor
+* Brian Grayson
+* John Hauser
+* Bill Huffman
+* Earl Killian
+* Nick Kossifidis
+* Paul Ku
+* Wenhao Li
+* Rongchuan Liu
+* Xu Lu
+* Fabrice Marinet
 * José Martins
-* Thomas Roecker
+* Zeyu Mi
+* Manuel Offenberg
 * Sandro Pinto
 * Manuel Rodriguez
-* Luís Cunha
-* Rongchuan Liu
-* Nick Kossifidis
-* Andy Dellow
-* Manuel Offenberg
-* Allen Baum
-* Bill Huffman
-* Xu Lu
-* Wenhao Li
+* Thomas Roecker
+* Noureddine Ait Said
+* Vedvyas Shanbhogue
+* Charlie Su
+* Peter Vrabel
+* Andrew Waterman
 * Yubin Xia
 * Joe Xie
-* Paul Ku
-* Jonathan Behrens
-* Robin Zheng
-* Zeyu Mi
-* Fabrice Marinet
-* Noureddine Ait Said
 * Xi Zhao
-* Andrew Waterman
-* Earl Killian
-* Greg Favor
-* John Hauser
-* Krste Asanović
-* Vedvyas Shanbhogue
+* Robin Zheng
